@@ -20,8 +20,13 @@ public class LeagueTable {
     public List<LeagueTableEntry> getTableEntries() {
         Comparator<LeagueTableEntry> byPoints = (o1, o2) -> o2.getPoints() - o1.getPoints();
         Comparator<LeagueTableEntry> byDifference = (o1, o2) -> o2.getGoalDifference() - o1.getGoalDifference();
+        Comparator<LeagueTableEntry> byGoalScored = (o1, o2) -> o2.getGoalsFor() - o1.getGoalsFor();
+        Comparator<LeagueTableEntry> byTeamName = Comparator.comparing(LeagueTableEntry::getTeamName);
         return this.teamList.values().stream()
-                .sorted(byPoints.thenComparing(byDifference))
+                .sorted(byPoints
+                        .thenComparing(byDifference)
+                        .thenComparing(byGoalScored)
+                        .thenComparing(byTeamName))
                 .toList();
     }
 

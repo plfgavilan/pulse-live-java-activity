@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 class LeagueTableTest {
     private LeagueTable sut;
@@ -24,7 +23,7 @@ class LeagueTableTest {
     }
 
     @Test
-    void getTableEntries_havingListOfMatches_ThenGetTheTableLeagueSortedByScore() {
+    void getTableEntries_havingListOfMatches_ThenGetTheTableWithTeamValuesCalculated() {
         // Arrangement
         List<Match> matches = List.of(
                 new Match("TeamA", "TeamB", 2, 1),
@@ -74,11 +73,12 @@ class LeagueTableTest {
     }
 
     @Test
-    void getTableEntries_havingEqualPointsAndEqualDifference_thenSortByGoalScored() {
+    void getTableEntries_havingEqualPointsAndGoalDifference_thenSortByGoalScored() {
         // Arrangement
         List<Match> matches = List.of(
-                new Match("TeamA", "TeamC", 2, 0),
-                new Match("TeamB", "TeamC", 3, 1)
+                new Match("TeamB", "TeamC", 3, 1),
+                new Match("TeamA", "TeamC", 4, 2),
+                new Match("TeamD", "TeamC", 2, 0)
         );
 
         // Action
@@ -86,9 +86,32 @@ class LeagueTableTest {
         List<LeagueTableEntry> result = sut.getTableEntries();
 
         // Asserts
-        assertThat(result.get(0).getTeamName()).isEqualTo("TeamB");
-        assertThat(result.get(1).getTeamName()).isEqualTo("TeamA");
-        assertThat(result.get(2).getTeamName()).isEqualTo("TeamC");
+        assertThat(result.get(0).getTeamName()).isEqualTo("TeamA");
+        assertThat(result.get(1).getTeamName()).isEqualTo("TeamB");
+        assertThat(result.get(2).getTeamName()).isEqualTo("TeamD");
+        assertThat(result.get(3).getTeamName()).isEqualTo("TeamC");
+    }
+
+    @Test
+    void getTableEntries_havingEqualPointsAndDifferenceAndGoalScored_thenSortByTeamName() {
+        // Arrangement
+        List<Match> matches = List.of(
+                new Match("TeamB", "TeamC", 2, 0),
+                new Match("TeamE", "TeamC", 2, 0),
+                new Match("TeamA", "TeamC", 2, 0),
+                new Match("TeamD", "TeamC", 2, 0)
+        );
+
+        // Action
+        sut = new LeagueTable(matches);
+        List<LeagueTableEntry> result = sut.getTableEntries();
+
+        // Asserts
+        assertThat(result.get(0).getTeamName()).isEqualTo("TeamA");
+        assertThat(result.get(1).getTeamName()).isEqualTo("TeamB");
+        assertThat(result.get(2).getTeamName()).isEqualTo("TeamD");
+        assertThat(result.get(3).getTeamName()).isEqualTo("TeamE");
+        assertThat(result.get(4).getTeamName()).isEqualTo("TeamC");
     }
 }
 
