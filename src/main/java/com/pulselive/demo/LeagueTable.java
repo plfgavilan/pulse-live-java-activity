@@ -1,5 +1,6 @@
 package com.pulselive.demo;
 
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -17,8 +18,10 @@ public class LeagueTable {
      * @return
      */
     public List<LeagueTableEntry> getTableEntries() {
+        Comparator<LeagueTableEntry> byPoints = (o1, o2) -> o2.getPoints() - o1.getPoints();
+        Comparator<LeagueTableEntry> byDifference = (o1, o2) -> o2.getGoalDifference() - o1.getGoalDifference();
         return this.teamList.values().stream()
-                .sorted((o1, o2) -> o2.getPoints() - o1.getPoints())
+                .sorted(byPoints.thenComparing(byDifference))
                 .toList();
     }
 

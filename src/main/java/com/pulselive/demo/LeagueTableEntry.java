@@ -86,7 +86,7 @@ public class LeagueTableEntry {
     }
 
     public int getGoalDifference() {
-        return goalDifference;
+        return getGoalsFor() - getGoalsAgainst();
     }
 
     public void setGoalDifference(int goalDifference) {
