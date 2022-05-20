@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 public class LeagueTable {
-    private Map<String, LeagueTableEntry> teamList = new HashMap<>();
+    private final Map<String, LeagueTableEntry> teamList = new HashMap<>();
 
     public LeagueTable(final List<Match> matches) {
         matches.forEach(this::updateClassification);
@@ -46,7 +46,7 @@ public class LeagueTable {
             setWinner(awayTeam);
             setLooser(homeTeam);
         }
-        if (match.getHomeTeam().equals(match.getAwayTeam())) {
+        if (match.getHomeScore() == match.getAwayScore()) {
             setDraw(homeTeam);
             setDraw(awayTeam);
         }

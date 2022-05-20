@@ -24,11 +24,11 @@ class LeagueTableTest {
     }
 
     @Test
-    void getTableEntries_havingListOfMatches_ThenGetTheTableLeageSortedByScore() {
+    void getTableEntries_havingListOfMatches_ThenGetTheTableLeagueSortedByScore() {
         // Arrangement
         List<Match> matches = List.of(
                 new Match("TeamA", "TeamB", 2, 1),
-                new Match("TeamB", "TeamA", 1, 2)
+                new Match("TeamB", "TeamA", 1, 1)
         );
 
         // Action
@@ -38,19 +38,19 @@ class LeagueTableTest {
         // Asserts
         assertThat(result).hasSize(2);
         assertThat(result.get(0).getPlayed()).isEqualTo(2);
-        assertThat(result.get(0).getWon()).isEqualTo(2);
-        assertThat(result.get(0).getDrawn()).isZero();
+        assertThat(result.get(0).getWon()).isEqualTo(1);
+        assertThat(result.get(0).getDrawn()).isEqualTo(1);
         assertThat(result.get(0).getLost()).isZero();
-        assertThat(result.get(0).getGoalsFor()).isEqualTo(4);
+        assertThat(result.get(0).getGoalsFor()).isEqualTo(3);
+        assertThat(result.get(0).getPoints()).isEqualTo(4);
         assertThat(result.get(0).getGoalsAgainst()).isEqualTo(2);
-        assertThat(result.get(0).getPoints()).isEqualTo(6);
 
         assertThat(result.get(1).getPlayed()).isEqualTo(2);
         assertThat(result.get(1).getWon()).isZero();
-        assertThat(result.get(1).getDrawn()).isZero();
-        assertThat(result.get(1).getLost()).isEqualTo(2);
+        assertThat(result.get(1).getDrawn()).isEqualTo(1);
+        assertThat(result.get(1).getLost()).isEqualTo(1);
         assertThat(result.get(1).getGoalsFor()).isEqualTo(2);
-        assertThat(result.get(1).getGoalsAgainst()).isEqualTo(4);
-        assertThat(result.get(1).getPoints()).isZero();
+        assertThat(result.get(1).getGoalsAgainst()).isEqualTo(3);
+        assertThat(result.get(1).getPoints()).isEqualTo(1);
     }
 }
