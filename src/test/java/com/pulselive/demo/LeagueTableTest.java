@@ -57,7 +57,7 @@ class LeagueTableTest {
     }
 
     @Test
-    void getTableEntries_havingEqualPoints() {
+    void getTableEntries_havingEqualPoints_thenSortByGoalDifference() {
         // Arrangement
         List<Match> matches = List.of(
                 new Match("TeamA", "TeamB", 2, 0),
@@ -71,6 +71,24 @@ class LeagueTableTest {
         // Asserts
         assertThat(result.get(0).getTeamName()).isEqualTo("TeamA");
         assertThat(result.get(1).getTeamName()).isEqualTo("TeamB");
+    }
+
+    @Test
+    void getTableEntries_havingEqualPointsAndEqualDifference_thenSortByGoalScored() {
+        // Arrangement
+        List<Match> matches = List.of(
+                new Match("TeamA", "TeamC", 2, 0),
+                new Match("TeamB", "TeamC", 3, 1)
+        );
+
+        // Action
+        sut = new LeagueTable(matches);
+        List<LeagueTableEntry> result = sut.getTableEntries();
+
+        // Asserts
+        assertThat(result.get(0).getTeamName()).isEqualTo("TeamB");
+        assertThat(result.get(1).getTeamName()).isEqualTo("TeamA");
+        assertThat(result.get(2).getTeamName()).isEqualTo("TeamC");
     }
 }
 
