@@ -1,0 +1,14 @@
+== Domain model
+
+[plantuml]
+----
+class LeagueTableEntry
+class Match
+----
+
+== Use cases
+[plantuml]
+----
+left to right direction
+user -> (GetLeagueTableEntry)
+----
