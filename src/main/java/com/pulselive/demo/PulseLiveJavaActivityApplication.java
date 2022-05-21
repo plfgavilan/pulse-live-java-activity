@@ -20,6 +20,14 @@ public class PulseLiveJavaActivityApplication implements CommandLineRunner {
                 new LeagueTableView()
         );
         leagueTableController.getTableEntries("/home/pedro/workspace/pulse-live-java-activity/data/la-liga-0910.csv");
-
+        leagueTableController.getTableEntries("/home/pedro/workspace/pulse-live-java-activity/data/la-liga-1011.csv");
+        leagueTableController.getTableEntries("/home/pedro/workspace/pulse-live-java-activity/data/la-liga-1112.csv");
+        leagueTableController.getTableEntries("/home/pedro/workspace/pulse-live-java-activity/data/la-liga-1213.csv");
+        leagueTableController.getTableEntries("/home/pedro/workspace/pulse-live-java-activity/data/la-liga-1314.csv");
+        leagueTableController.getTableEntries("/home/pedro/workspace/pulse-live-java-activity/data/la-liga-1415.csv");
+        leagueTableController.getTableEntries("/home/pedro/workspace/pulse-live-java-activity/data/la-liga-1516.csv");
+        leagueTableController.getTableEntries("/home/pedro/workspace/pulse-live-java-activity/data/la-liga-1617.csv");
+        leagueTableController.getTableEntries("/home/pedro/workspace/pulse-live-java-activity/data/la-liga-1718.csv");
+        leagueTableController.getTableEntries("/home/pedro/workspace/pulse-live-java-activity/data/la-liga-1819.csv");
     }
 }
