@@ -1,5 +1,7 @@
 package com.pulselive.demo;
 
+import static com.pulselive.demo.Constants.ONE;
+
 public class LeagueTableEntry {
     private String teamName;
     private int played;
@@ -8,7 +10,6 @@ public class LeagueTableEntry {
     private int lost;
     private int goalsFor;
     private int goalsAgainst;
-    private int goalDifference;
     private int points;
 
 
@@ -17,7 +18,7 @@ public class LeagueTableEntry {
     }
 
     public LeagueTableEntry(final String teamName, final int played, final int won, final int drawn, final int lost,
-                            final int goalsFor, final int goalsAgainst, final int goalDifference, final int points) {
+                            final int goalsFor, final int goalsAgainst, final int points) {
         this.teamName = teamName;
         this.played = played;
         this.won = won;
@@ -25,7 +26,6 @@ public class LeagueTableEntry {
         this.lost = lost;
         this.goalsFor = goalsFor;
         this.goalsAgainst = goalsAgainst;
-        this.goalDifference = goalDifference;
         this.points = points;
     }
 
@@ -89,10 +89,6 @@ public class LeagueTableEntry {
         return getGoalsFor() - getGoalsAgainst();
     }
 
-    public void setGoalDifference(int goalDifference) {
-        this.goalDifference = goalDifference;
-    }
-
     public int getPoints() {
         return points;
     }
@@ -107,5 +103,21 @@ public class LeagueTableEntry {
 
     public void addGoalsAgainst(int newScore) {
         this.setGoalsAgainst(this.getGoalsAgainst() + newScore);
+    }
+
+    public void addPoints(int newPoints) {
+        this.setPoints(this.getPoints() + newPoints);
+    }
+
+    public void addDrawn(int newDrawn) {
+        this.setDrawn(this.getDrawn() + newDrawn);
+    }
+
+    public void addLost(int newLost) {
+        this.setLost(this.getLost() + newLost);
+    }
+
+    public void addWin(int newWin) {
+        this.setWon(this.getWon() + newWin);
     }
 }
