@@ -16,6 +16,6 @@ public class LeagueTableController {
         List<Match> matches = matchRepository.readAll(identifier);
         LeagueTable leagueTable = new LeagueTable(matches);
         List<LeagueTableEntry> result = leagueTable.getTableEntries();
-        leagueTableView.present(result);
+        leagueTableView.present(identifier, result);
     }
 }

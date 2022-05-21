@@ -12,20 +12,19 @@ import java.util.stream.Stream;
 public class MatchRepositoryDataHubSportDataImpl implements MatchRepository {
     @Override
     public List<Match> readAll(String fileName) {
-        Path path = Paths.get(fileName);
+        Path path = Paths.get("/home/pedro/workspace/pulse-live-java-activity/data/" + fileName + ".csv");
         Stream<String> stream = null;
         try {
             stream = Files.lines(path, StandardCharsets.UTF_8);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        List<Match> matchStream = stream
+        return stream
                 .skip(1)
                 .map(fromFile -> {
                     String[] split = fromFile.split(",");
                     return new Match(split[2], split[3], Integer.parseInt(split[4]), Integer.parseInt(split[5]));
                 })
                 .collect(Collectors.toList());
-        return matchStream;
     }
 }

@@ -10,7 +10,11 @@ public class LeagueTableView {
     private List<String> columns = List.of("Pos", "Team", "Points");
     private Integer delimiterLength;
 
-    public void present(List<LeagueTableEntry> result) {
+    public void present(String identifier, List<LeagueTableEntry> result) {
+        String tittle = identifier.replace("-", " ").toUpperCase();
+        System.out.println("=======================");
+        System.out.println(" " + tittle + "   ");
+        System.out.println("=======================");
         this.delimiterLength = result.stream().map(LeagueTableEntry::getTeamName)
                 .mapToInt(String::length)
                 .max().getAsInt();
