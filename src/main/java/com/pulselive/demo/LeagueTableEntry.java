@@ -101,4 +101,11 @@ public class LeagueTableEntry {
         this.points = points;
     }
 
+    public void addGoalsFor(int newScore) {
+        this.setGoalsFor(this.getGoalsFor() + newScore);
+    }
+
+    public void addGoalsAgainst(int newScore) {
+        this.setGoalsAgainst(this.getGoalsAgainst() + newScore);
+    }
 }

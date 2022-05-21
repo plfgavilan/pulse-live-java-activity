@@ -31,20 +31,14 @@ public class LeagueTable {
     }
 
     private void updateClassification(Match match) {
-        if (!this.teamList.containsKey(match.getHomeTeam())) {
-            this.teamList.put(match.getHomeTeam(), new LeagueTableEntry(match.getHomeTeam()));
-        }
-        if (!this.teamList.containsKey(match.getAwayTeam())) {
-            this.teamList.put(match.getAwayTeam(), new LeagueTableEntry(match.getAwayTeam()));
-        }
-        LeagueTableEntry homeTeam = this.teamList.get(match.getHomeTeam());
-        LeagueTableEntry awayTeam = this.teamList.get(match.getAwayTeam());
+        LeagueTableEntry homeTeam = getLeagueTableEntry(match.getHomeTeam());
+        LeagueTableEntry awayTeam = getLeagueTableEntry(match.getAwayTeam());
 
-        homeTeam.setGoalsFor(homeTeam.getGoalsFor() + match.getHomeScore());
-        homeTeam.setGoalsAgainst(homeTeam.getGoalsAgainst() + match.getAwayScore());
+        homeTeam.addGoalsFor(match.getHomeScore());
+        homeTeam.addGoalsAgainst(match.getAwayScore());
 
-        awayTeam.setGoalsFor(awayTeam.getGoalsFor() + match.getAwayScore());
-        awayTeam.setGoalsAgainst(awayTeam.getGoalsAgainst() + match.getHomeScore());
+        awayTeam.addGoalsFor(match.getAwayScore());
+        awayTeam.addGoalsAgainst(match.getHomeScore());
 
         if (match.getHomeScore() > match.getAwayScore()) {
             setWinner(homeTeam);
@@ -58,6 +52,13 @@ public class LeagueTable {
             setDraw(homeTeam);
             setDraw(awayTeam);
         }
+    }
+
+    private LeagueTableEntry getLeagueTableEntry(String teamName) {
+        if (!this.teamList.containsKey(teamName)) {
+            this.teamList.put(teamName, new LeagueTableEntry(teamName));
+        }
+        return this.teamList.get(teamName);
     }
 
     private void setDraw(LeagueTableEntry team) {
