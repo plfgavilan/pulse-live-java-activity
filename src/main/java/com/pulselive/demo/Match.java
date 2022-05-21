@@ -32,4 +32,12 @@ public class Match {
     public boolean hasNoWinner() {
         return this.getHomeScore() == this.getAwayScore();
     }
+
+    public boolean isHomeTeamWinner() {
+        return this.getHomeScore() > this.getAwayScore();
+    }
+
+    public boolean isAwayTeamWinner() {
+        return this.getAwayScore() > this.getHomeScore();
+    }
 }

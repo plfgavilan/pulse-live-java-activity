@@ -1,15 +1,19 @@
 package com.pulselive.demo;
 
 import static com.pulselive.demo.Constants.ONE;
+import static com.pulselive.demo.Constants.WINNER_POINTS;
 
 public class LeagueTableEntry {
     private String teamName;
+
+    // This field could be calculated: played = won + drawn + lost
     private int played;
     private int won;
     private int drawn;
     private int lost;
     private int goalsFor;
     private int goalsAgainst;
+    // This field could be calculated: points = won * WINNER_POINTS + drawn
     private int points;
 
 
@@ -109,15 +113,20 @@ public class LeagueTableEntry {
         this.setPoints(this.getPoints() + newPoints);
     }
 
-    public void addDrawn(int newDrawn) {
-        this.setDrawn(this.getDrawn() + newDrawn);
+    public void addWin() {
+        this.setWon(this.getWon() + ONE);
+        this.setPlayed(this.getPlayed() + ONE);
+        this.addPoints(WINNER_POINTS);
     }
 
-    public void addLost(int newLost) {
-        this.setLost(this.getLost() + newLost);
+    public void addLost() {
+        this.setLost(this.getLost() + ONE);
+        this.setPlayed(this.getPlayed() + ONE);
     }
 
-    public void addWin(int newWin) {
-        this.setWon(this.getWon() + newWin);
+    public void addDrawn() {
+        this.setDrawn(this.getDrawn() + ONE);
+        this.setPlayed(this.getPlayed() + ONE);
+        this.addPoints(ONE);
     }
 }
