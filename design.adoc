@@ -12,3 +12,10 @@ class Match
 left to right direction
 user -> (GetLeagueTableEntry)
 ----
+
+== Data
+I downloaded some data of football results from the following link:
+
+https://datahub.io/sports-data/spanish-la-liga
+
+
