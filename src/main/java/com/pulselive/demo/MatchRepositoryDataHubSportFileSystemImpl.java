@@ -1,5 +1,8 @@
 package com.pulselive.demo;
 
+import lombok.extern.log4j.Log4j2;
+import org.springframework.core.io.FileSystemResource;
+
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -9,10 +12,13 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class MatchRepositoryDataHubSportDataImpl implements MatchRepository {
+@Log4j2
+public class MatchRepositoryDataHubSportFileSystemImpl implements MatchRepository {
     @Override
-    public List<Match> readAll(String fileName) {
-        Path path = Paths.get("/home/pedro/workspace/pulse-live-java-activity/data/" + fileName + ".csv");
+    public List<Match> findAllByLeagueSeason(String fileName) {
+        String absolutePath = new FileSystemResource("").getFile().getAbsolutePath();
+        log.info("Base path csv(s): {}", absolutePath);
+        Path path = Paths.get(absolutePath + "/data/" + fileName + ".csv");
         Stream<String> stream = null;
         try {
             stream = Files.lines(path, StandardCharsets.UTF_8);

@@ -6,10 +6,11 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Log4j2
-public class LeagueTableView {
+public class SystemOutLeagueTablePresenterImpl implements LeagueTablePresenter {
     private List<String> columns = List.of("Pos", "Team", "Points");
     private Integer delimiterLength;
 
+    @Override
     public void present(String identifier, List<LeagueTableEntry> result) {
         String tittle = identifier.replace("-", " ").toUpperCase();
         System.out.println("=======================");

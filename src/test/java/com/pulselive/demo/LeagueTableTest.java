@@ -10,7 +10,7 @@ class LeagueTableTest {
     private LeagueTable sut;
 
     @Test
-    void getTableEntries() {
+    void getTableEntries_havingNoMatches() {
         // Arrangement
         List<Match> matches = List.of();
 

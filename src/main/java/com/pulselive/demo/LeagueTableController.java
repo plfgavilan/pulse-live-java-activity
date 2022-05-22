@@ -5,17 +5,17 @@ import java.util.List;
 public class LeagueTableController {
 
     private final MatchRepository matchRepository;
-    private final LeagueTableView leagueTableView;
+    private final LeagueTablePresenter leagueTableView;
 
-    public LeagueTableController(MatchRepository matchRepository, LeagueTableView leagueTableView) {
+    public LeagueTableController(MatchRepository matchRepository, SystemOutLeagueTablePresenterImpl leagueTableView) {
         this.matchRepository = matchRepository;
         this.leagueTableView = leagueTableView;
     }
 
-    public void getTableEntries(String identifier) {
-        List<Match> matches = matchRepository.readAll(identifier);
+    public void getTableEntries(String leagueSeason) {
+        List<Match> matches = matchRepository.findAllByLeagueSeason(leagueSeason);
         LeagueTable leagueTable = new LeagueTable(matches);
         List<LeagueTableEntry> result = leagueTable.getTableEntries();
-        leagueTableView.present(identifier, result);
+        leagueTableView.present(leagueSeason, result);
     }
 }
