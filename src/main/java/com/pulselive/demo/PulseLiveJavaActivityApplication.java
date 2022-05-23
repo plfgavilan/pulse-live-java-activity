@@ -26,7 +26,7 @@ public class PulseLiveJavaActivityApplication implements CommandLineRunner {
     public void run(String... args) {
         LeagueTableController leagueTableController = new LeagueTableController(
                 new MatchRepositoryDataHubSportFileSystemImpl(),
-                new SystemOutLeagueTablePresenterImpl()
+                new LeagueTableSystemOutPresenterImpl()
         );
         for (String leagueSeasonId : leagueSeasonsIds) {
             leagueTableController.getTableEntries(leagueSeasonId);

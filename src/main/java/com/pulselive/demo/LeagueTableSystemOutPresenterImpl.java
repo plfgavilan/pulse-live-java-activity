@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Log4j2
-public class SystemOutLeagueTablePresenterImpl implements LeagueTablePresenter {
+public class LeagueTableSystemOutPresenterImpl implements LeagueTablePresenter {
     private List<String> columns = List.of("Pos", "Team", "Points");
     private Integer delimiterLength;
 

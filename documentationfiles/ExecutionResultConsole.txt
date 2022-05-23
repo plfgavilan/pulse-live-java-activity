@@ -1,0 +1,534 @@
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.0)
+
+2022-05-23 09:38:11.858  INFO 24308 --- [           main] c.p.d.PulseLiveJavaActivityApplication   : Starting PulseLiveJavaActivityApplication using Java 17.0.3 on pedro-GF63-8RD with PID 24308 (/home/pedro/workspace/pulse-live-java-activity/target/classes started by pedro in /home/pedro/workspace/pulse-live-java-activity)
+2022-05-23 09:38:11.860  INFO 24308 --- [           main] c.p.d.PulseLiveJavaActivityApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-05-23 09:38:12.254  INFO 24308 --- [           main] c.p.d.PulseLiveJavaActivityApplication   : Started PulseLiveJavaActivityApplication in 0.753 seconds (JVM running for 1.222)
+2022-05-23 09:38:12.259  INFO 24308 --- [           main] atchRepositoryDataHubSportFileSystemImpl : Base path csv(s): /home/pedro/workspace/pulse-live-java-activity
+=======================
+ LA LIGA 0910   
+=======================
+|         Pos |        Team |      Points |
+| ----------- | ----------- | ----------- |
+|           1 |   Barcelona |          99 |
+|           2 | Real Madrid |          96 |
+|           3 |    Valencia |          71 |
+|           4 |     Sevilla |          63 |
+|           5 |    Mallorca |          62 |
+|           6 |      Getafe |          58 |
+|           7 |  Villarreal |          56 |
+|           8 |  Ath Bilbao |          54 |
+|           9 |  Ath Madrid |          47 |
+|          10 |   La Coruna |          47 |
+|          11 |     Espanol |          44 |
+|          12 |     Osasuna |          43 |
+|          13 |     Almeria |          42 |
+|          14 |    Zaragoza |          41 |
+|          15 |    Sp Gijon |          40 |
+|          16 |   Santander |          39 |
+|          17 |      Malaga |          37 |
+|          18 |  Valladolid |          36 |
+|          19 |    Tenerife |          36 |
+|          20 |       Xerez |          34 |
+2022-05-23 09:38:12.281  INFO 24308 --- [           main] atchRepositoryDataHubSportFileSystemImpl : Base path csv(s): /home/pedro/workspace/pulse-live-java-activity
+=======================
+ LA LIGA 1011   
+=======================
+|         Pos |        Team |      Points |
+| ----------- | ----------- | ----------- |
+|           1 |   Barcelona |          96 |
+|           2 | Real Madrid |          92 |
+|           3 |    Valencia |          71 |
+|           4 |  Villarreal |          62 |
+|           5 |  Ath Madrid |          58 |
+|           6 |  Ath Bilbao |          58 |
+|           7 |     Sevilla |          58 |
+|           8 |     Espanol |          49 |
+|           9 |     Osasuna |          47 |
+|          10 |    Sp Gijon |          47 |
+|          11 |      Malaga |          46 |
+|          12 |   Santander |          46 |
+|          13 |     Levante |          45 |
+|          14 |    Zaragoza |          45 |
+|          15 |    Sociedad |          45 |
+|          16 |      Getafe |          44 |
+|          17 |    Mallorca |          44 |
+|          18 |   La Coruna |          43 |
+|          19 |    Hercules |          35 |
+|          20 |     Almeria |          30 |
+2022-05-23 09:38:12.289  INFO 24308 --- [           main] atchRepositoryDataHubSportFileSystemImpl : Base path csv(s): /home/pedro/workspace/pulse-live-java-activity
+=======================
+ LA LIGA 1112   
+=======================
+|         Pos |        Team |      Points |
+| ----------- | ----------- | ----------- |
+|           1 | Real Madrid |         100 |
+|           2 |   Barcelona |          91 |
+|           3 |    Valencia |          61 |
+|           4 |      Malaga |          58 |
+|           5 |  Ath Madrid |          56 |
+|           6 |     Levante |          55 |
+|           7 |     Osasuna |          54 |
+|           8 |    Mallorca |          52 |
+|           9 |     Sevilla |          50 |
+|          10 |  Ath Bilbao |          49 |
+|          11 |    Sociedad |          47 |
+|          12 |       Betis |          47 |
+|          13 |      Getafe |          47 |
+|          14 |     Espanol |          46 |
+|          15 |   Vallecano |          43 |
+|          16 |    Zaragoza |          43 |
+|          17 |     Granada |          42 |
+|          18 |  Villarreal |          41 |
+|          19 |    Sp Gijon |          37 |
+|          20 |   Santander |          27 |
+2022-05-23 09:38:12.297  INFO 24308 --- [           main] atchRepositoryDataHubSportFileSystemImpl : Base path csv(s): /home/pedro/workspace/pulse-live-java-activity
+=======================
+ LA LIGA 1213   
+=======================
+|         Pos |        Team |      Points |
+| ----------- | ----------- | ----------- |
+|           1 |   Barcelona |         100 |
+|           2 | Real Madrid |          85 |
+|           3 |  Ath Madrid |          76 |
+|           4 |    Sociedad |          66 |
+|           5 |    Valencia |          65 |
+|           6 |      Malaga |          57 |
+|           7 |       Betis |          56 |
+|           8 |   Vallecano |          53 |
+|           9 |     Sevilla |          50 |
+|          10 |      Getafe |          47 |
+|          11 |     Levante |          46 |
+|          12 |  Ath Bilbao |          45 |
+|          13 |     Espanol |          44 |
+|          14 |  Valladolid |          43 |
+|          15 |     Granada |          42 |
+|          16 |     Osasuna |          39 |
+|          17 |       Celta |          37 |
+|          18 |    Mallorca |          36 |
+|          19 |   La Coruna |          35 |
+|          20 |    Zaragoza |          34 |
+2022-05-23 09:38:12.305  INFO 24308 --- [           main] atchRepositoryDataHubSportFileSystemImpl : Base path csv(s): /home/pedro/workspace/pulse-live-java-activity
+=======================
+ LA LIGA 1314   
+=======================
+|         Pos |        Team |      Points |
+| ----------- | ----------- | ----------- |
+|           1 |  Ath Madrid |          90 |
+|           2 |   Barcelona |          87 |
+|           3 | Real Madrid |          87 |
+|           4 |  Ath Bilbao |          70 |
+|           5 |     Sevilla |          63 |
+|           6 |  Villarreal |          59 |
+|           7 |    Sociedad |          59 |
+|           8 |    Valencia |          49 |
+|           9 |       Celta |          49 |
+|          10 |     Levante |          48 |
+|          11 |      Malaga |          45 |
+|          12 |   Vallecano |          43 |
+|          13 |     Espanol |          42 |
+|          14 |      Getafe |          42 |
+|          15 |     Granada |          41 |
+|          16 |       Elche |          40 |
+|          17 |     Almeria |          40 |
+|          18 |     Osasuna |          39 |
+|          19 |  Valladolid |          36 |
+|          20 |       Betis |          25 |
+2022-05-23 09:38:12.312  INFO 24308 --- [           main] atchRepositoryDataHubSportFileSystemImpl : Base path csv(s): /home/pedro/workspace/pulse-live-java-activity
+=======================
+ LA LIGA 1415   
+=======================
+|         Pos |        Team |      Points |
+| ----------- | ----------- | ----------- |
+|           1 |   Barcelona |          94 |
+|           2 | Real Madrid |          92 |
+|           3 |  Ath Madrid |          78 |
+|           4 |    Valencia |          77 |
+|           5 |     Sevilla |          76 |
+|           6 |  Villarreal |          60 |
+|           7 |  Ath Bilbao |          55 |
+|           8 |       Celta |          51 |
+|           9 |      Malaga |          50 |
+|          10 |     Espanol |          49 |
+|          11 |   Vallecano |          49 |
+|          12 |    Sociedad |          46 |
+|          13 |       Elche |          41 |
+|          14 |      Getafe |          37 |
+|          15 |     Levante |          37 |
+|          16 |       Eibar |          35 |
+|          17 |   La Coruna |          35 |
+|          18 |     Granada |          35 |
+|          19 |     Almeria |          32 |
+|          20 |     Cordoba |          20 |
+2022-05-23 09:38:12.318  INFO 24308 --- [           main] atchRepositoryDataHubSportFileSystemImpl : Base path csv(s): /home/pedro/workspace/pulse-live-java-activity
+=======================
+ LA LIGA 1516   
+=======================
+|         Pos |        Team |      Points |
+| ----------- | ----------- | ----------- |
+|           1 |   Barcelona |          91 |
+|           2 | Real Madrid |          90 |
+|           3 |  Ath Madrid |          88 |
+|           4 |  Villarreal |          64 |
+|           5 |  Ath Bilbao |          62 |
+|           6 |       Celta |          60 |
+|           7 |     Sevilla |          52 |
+|           8 |      Malaga |          48 |
+|           9 |    Sociedad |          48 |
+|          10 |       Betis |          45 |
+|          11 |    Valencia |          44 |
+|          12 |  Las Palmas |          44 |
+|          13 |       Eibar |          43 |
+|          14 |     Espanol |          43 |
+|          15 |   La Coruna |          42 |
+|          16 |    Sp Gijon |          39 |
+|          17 |     Granada |          39 |
+|          18 |   Vallecano |          38 |
+|          19 |      Getafe |          36 |
+|          20 |     Levante |          32 |
+2022-05-23 09:38:12.339  INFO 24308 --- [           main] atchRepositoryDataHubSportFileSystemImpl : Base path csv(s): /home/pedro/workspace/pulse-live-java-activity
+=======================
+ LA LIGA 1617   
+=======================
+|         Pos |        Team |      Points |
+| ----------- | ----------- | ----------- |
+|           1 | Real Madrid |          93 |
+|           2 |   Barcelona |          90 |
+|           3 |  Ath Madrid |          78 |
+|           4 |     Sevilla |          72 |
+|           5 |  Villarreal |          67 |
+|           6 |    Sociedad |          64 |
+|           7 |  Ath Bilbao |          63 |
+|           8 |     Espanol |          56 |
+|           9 |      Alaves |          55 |
+|          10 |       Eibar |          54 |
+|          11 |      Malaga |          46 |
+|          12 |    Valencia |          46 |
+|          13 |       Celta |          45 |
+|          14 |  Las Palmas |          39 |
+|          15 |       Betis |          39 |
+|          16 |   La Coruna |          36 |
+|          17 |     Leganes |          35 |
+|          18 |    Sp Gijon |          31 |
+|          19 |     Osasuna |          22 |
+|          20 |     Granada |          20 |
+2022-05-23 09:38:12.344  INFO 24308 --- [           main] atchRepositoryDataHubSportFileSystemImpl : Base path csv(s): /home/pedro/workspace/pulse-live-java-activity
+=======================
+ LA LIGA 1718   
+=======================
+|         Pos |        Team |      Points |
+| ----------- | ----------- | ----------- |
+|           1 |   Barcelona |          93 |
+|           2 |  Ath Madrid |          79 |
+|           3 | Real Madrid |          76 |
+|           4 |    Valencia |          73 |
+|           5 |  Villarreal |          61 |
+|           6 |       Betis |          60 |
+|           7 |     Sevilla |          58 |
+|           8 |      Getafe |          55 |
+|           9 |       Eibar |          51 |
+|          10 |      Girona |          51 |
+|          11 |    Sociedad |          49 |
+|          12 |       Celta |          49 |
+|          13 |     Espanol |          49 |
+|          14 |      Alaves |          47 |
+|          15 |     Levante |          46 |
+|          16 |  Ath Bilbao |          43 |
+|          17 |     Leganes |          43 |
+|          18 |   La Coruna |          29 |
+|          19 |  Las Palmas |          22 |
+|          20 |      Malaga |          20 |
+2022-05-23 09:38:12.350  INFO 24308 --- [           main] atchRepositoryDataHubSportFileSystemImpl : Base path csv(s): /home/pedro/workspace/pulse-live-java-activity
+=======================
+ LA LIGA 1819   
+=======================
+|         Pos |        Team |      Points |
+| ----------- | ----------- | ----------- |
+|           1 |   Barcelona |          87 |
+|           2 |  Ath Madrid |          76 |
+|           3 | Real Madrid |          68 |
+|           4 |    Valencia |          61 |
+|           5 |     Sevilla |          59 |
+|           6 |      Getafe |          59 |
+|           7 |     Espanol |          53 |
+|           8 |  Ath Bilbao |          53 |
+|           9 |    Sociedad |          50 |
+|          10 |       Betis |          50 |
+|          11 |      Alaves |          50 |
+|          12 |       Eibar |          47 |
+|          13 |     Leganes |          45 |
+|          14 |  Villarreal |          44 |
+|          15 |     Levante |          44 |
+|          16 |       Celta |          41 |
+|          17 |  Valladolid |          41 |
+|          18 |      Girona |          37 |
+|          19 |      Huesca |          33 |
+|          20 |   Vallecano |          32 |
+2022-05-23 09:38:12.355  INFO 24308 --- [           main] atchRepositoryDataHubSportFileSystemImpl : Base path csv(s): /home/pedro/workspace/pulse-live-java-activity
+=======================
+ PREMIER LEAGUE 0910   
+=======================
+|         Pos |        Team |      Points |
+| ----------- | ----------- | ----------- |
+|           1 |     Chelsea |          86 |
+|           2 |  Man United |          85 |
+|           3 |     Arsenal |          75 |
+|           4 |   Tottenham |          70 |
+|           5 |    Man City |          67 |
+|           6 | Aston Villa |          64 |
+|           7 |   Liverpool |          63 |
+|           8 |     Everton |          61 |
+|           9 |  Birmingham |          50 |
+|          10 |   Blackburn |          50 |
+|          11 |       Stoke |          47 |
+|          12 |      Fulham |          46 |
+|          13 |  Sunderland |          44 |
+|          14 |      Bolton |          39 |
+|          15 |      Wolves |          38 |
+|          16 |       Wigan |          36 |
+|          17 |    West Ham |          35 |
+|          18 |     Burnley |          30 |
+|          19 |        Hull |          30 |
+|          20 |  Portsmouth |          28 |
+2022-05-23 09:38:12.362  INFO 24308 --- [           main] atchRepositoryDataHubSportFileSystemImpl : Base path csv(s): /home/pedro/workspace/pulse-live-java-activity
+=======================
+ PREMIER LEAGUE 1011   
+=======================
+|         Pos |        Team |      Points |
+| ----------- | ----------- | ----------- |
+|           1 |  Man United |          80 |
+|           2 |     Chelsea |          71 |
+|           3 |    Man City |          71 |
+|           4 |     Arsenal |          68 |
+|           5 |   Tottenham |          62 |
+|           6 |   Liverpool |          58 |
+|           7 |     Everton |          54 |
+|           8 |      Fulham |          49 |
+|           9 | Aston Villa |          48 |
+|          10 |  Sunderland |          47 |
+|          11 |   West Brom |          47 |
+|          12 |   Newcastle |          46 |
+|          13 |       Stoke |          46 |
+|          14 |      Bolton |          46 |
+|          15 |   Blackburn |          43 |
+|          16 |       Wigan |          42 |
+|          17 |      Wolves |          40 |
+|          18 |  Birmingham |          39 |
+|          19 |   Blackpool |          39 |
+|          20 |    West Ham |          33 |
+2022-05-23 09:38:12.369  INFO 24308 --- [           main] atchRepositoryDataHubSportFileSystemImpl : Base path csv(s): /home/pedro/workspace/pulse-live-java-activity
+=======================
+ PREMIER LEAGUE 1112   
+=======================
+|         Pos |        Team |      Points |
+| ----------- | ----------- | ----------- |
+|           1 |    Man City |          89 |
+|           2 |  Man United |          89 |
+|           3 |     Arsenal |          70 |
+|           4 |   Tottenham |          69 |
+|           5 |   Newcastle |          65 |
+|           6 |     Chelsea |          64 |
+|           7 |     Everton |          56 |
+|           8 |   Liverpool |          52 |
+|           9 |      Fulham |          52 |
+|          10 |   West Brom |          47 |
+|          11 |     Swansea |          47 |
+|          12 |     Norwich |          47 |
+|          13 |  Sunderland |          45 |
+|          14 |       Stoke |          45 |
+|          15 |       Wigan |          43 |
+|          16 | Aston Villa |          38 |
+|          17 |         QPR |          37 |
+|          18 |      Bolton |          36 |
+|          19 |   Blackburn |          31 |
+|          20 |      Wolves |          25 |
+2022-05-23 09:38:12.376  INFO 24308 --- [           main] atchRepositoryDataHubSportFileSystemImpl : Base path csv(s): /home/pedro/workspace/pulse-live-java-activity
+=======================
+ PREMIER LEAGUE 1213   
+=======================
+|         Pos |        Team |      Points |
+| ----------- | ----------- | ----------- |
+|           1 |  Man United |          89 |
+|           2 |    Man City |          78 |
+|           3 |     Chelsea |          75 |
+|           4 |     Arsenal |          73 |
+|           5 |   Tottenham |          72 |
+|           6 |     Everton |          63 |
+|           7 |   Liverpool |          61 |
+|           8 |   West Brom |          49 |
+|           9 |     Swansea |          46 |
+|          10 |    West Ham |          46 |
+|          11 |     Norwich |          44 |
+|          12 |      Fulham |          43 |
+|          13 |       Stoke |          42 |
+|          14 | Southampton |          41 |
+|          15 | Aston Villa |          41 |
+|          16 |   Newcastle |          41 |
+|          17 |  Sunderland |          39 |
+|          18 |       Wigan |          36 |
+|          19 |     Reading |          28 |
+|          20 |         QPR |          25 |
+2022-05-23 09:38:12.386  INFO 24308 --- [           main] atchRepositoryDataHubSportFileSystemImpl : Base path csv(s): /home/pedro/workspace/pulse-live-java-activity
+=======================
+ PREMIER LEAGUE 1314   
+=======================
+|            Pos |           Team |         Points |
+| -------------- | -------------- | -------------- |
+|              1 |       Man City |             86 |
+|              2 |      Liverpool |             84 |
+|              3 |        Chelsea |             82 |
+|              4 |        Arsenal |             79 |
+|              5 |        Everton |             72 |
+|              6 |      Tottenham |             69 |
+|              7 |     Man United |             64 |
+|              8 |    Southampton |             56 |
+|              9 |          Stoke |             50 |
+|             10 |      Newcastle |             49 |
+|             11 | Crystal Palace |             45 |
+|             12 |        Swansea |             42 |
+|             13 |       West Ham |             40 |
+|             14 |     Sunderland |             38 |
+|             15 |    Aston Villa |             38 |
+|             16 |           Hull |             37 |
+|             17 |      West Brom |             36 |
+|             18 |        Norwich |             33 |
+|             19 |         Fulham |             32 |
+|             20 |        Cardiff |             30 |
+2022-05-23 09:38:12.397  INFO 24308 --- [           main] atchRepositoryDataHubSportFileSystemImpl : Base path csv(s): /home/pedro/workspace/pulse-live-java-activity
+=======================
+ PREMIER LEAGUE 1415   
+=======================
+|            Pos |           Team |         Points |
+| -------------- | -------------- | -------------- |
+|              1 |        Chelsea |             87 |
+|              2 |       Man City |             79 |
+|              3 |        Arsenal |             75 |
+|              4 |     Man United |             70 |
+|              5 |      Tottenham |             64 |
+|              6 |      Liverpool |             62 |
+|              7 |    Southampton |             60 |
+|              8 |        Swansea |             56 |
+|              9 |          Stoke |             54 |
+|             10 | Crystal Palace |             48 |
+|             11 |        Everton |             47 |
+|             12 |       West Ham |             47 |
+|             13 |      West Brom |             44 |
+|             14 |      Leicester |             41 |
+|             15 |      Newcastle |             39 |
+|             16 |     Sunderland |             38 |
+|             17 |    Aston Villa |             38 |
+|             18 |           Hull |             35 |
+|             19 |        Burnley |             33 |
+|             20 |            QPR |             30 |
+2022-05-23 09:38:12.407  INFO 24308 --- [           main] atchRepositoryDataHubSportFileSystemImpl : Base path csv(s): /home/pedro/workspace/pulse-live-java-activity
+=======================
+ PREMIER LEAGUE 1516   
+=======================
+|            Pos |           Team |         Points |
+| -------------- | -------------- | -------------- |
+|              1 |      Leicester |             81 |
+|              2 |        Arsenal |             71 |
+|              3 |      Tottenham |             70 |
+|              4 |       Man City |             66 |
+|              5 |     Man United |             66 |
+|              6 |    Southampton |             63 |
+|              7 |       West Ham |             62 |
+|              8 |      Liverpool |             60 |
+|              9 |          Stoke |             51 |
+|             10 |        Chelsea |             50 |
+|             11 |        Everton |             47 |
+|             12 |        Swansea |             47 |
+|             13 |        Watford |             45 |
+|             14 |      West Brom |             43 |
+|             15 | Crystal Palace |             42 |
+|             16 |    Bournemouth |             42 |
+|             17 |     Sunderland |             39 |
+|             18 |      Newcastle |             37 |
+|             19 |        Norwich |             34 |
+|             20 |    Aston Villa |             17 |
+2022-05-23 09:38:12.417  INFO 24308 --- [           main] atchRepositoryDataHubSportFileSystemImpl : Base path csv(s): /home/pedro/workspace/pulse-live-java-activity
+=======================
+ PREMIER LEAGUE 1617   
+=======================
+|            Pos |           Team |         Points |
+| -------------- | -------------- | -------------- |
+|              1 |        Chelsea |             93 |
+|              2 |      Tottenham |             86 |
+|              3 |       Man City |             78 |
+|              4 |      Liverpool |             76 |
+|              5 |        Arsenal |             75 |
+|              6 |     Man United |             69 |
+|              7 |        Everton |             61 |
+|              8 |    Southampton |             46 |
+|              9 |    Bournemouth |             46 |
+|             10 |      West Brom |             45 |
+|             11 |       West Ham |             45 |
+|             12 |      Leicester |             44 |
+|             13 |          Stoke |             44 |
+|             14 | Crystal Palace |             41 |
+|             15 |        Swansea |             41 |
+|             16 |        Burnley |             40 |
+|             17 |        Watford |             40 |
+|             18 |           Hull |             34 |
+|             19 |  Middlesbrough |             28 |
+|             20 |     Sunderland |             24 |
+2022-05-23 09:38:12.428  INFO 24308 --- [           main] atchRepositoryDataHubSportFileSystemImpl : Base path csv(s): /home/pedro/workspace/pulse-live-java-activity
+=======================
+ PREMIER LEAGUE 1718   
+=======================
+|            Pos |           Team |         Points |
+| -------------- | -------------- | -------------- |
+|              1 |       Man City |            100 |
+|              2 |     Man United |             81 |
+|              3 |      Tottenham |             77 |
+|              4 |      Liverpool |             75 |
+|              5 |        Chelsea |             70 |
+|              6 |        Arsenal |             63 |
+|              7 |        Burnley |             54 |
+|              8 |        Everton |             49 |
+|              9 |      Leicester |             47 |
+|             10 |      Newcastle |             44 |
+|             11 | Crystal Palace |             44 |
+|             12 |    Bournemouth |             44 |
+|             13 |       West Ham |             42 |
+|             14 |        Watford |             41 |
+|             15 |       Brighton |             40 |
+|             16 |   Huddersfield |             37 |
+|             17 |    Southampton |             36 |
+|             18 |        Swansea |             33 |
+|             19 |          Stoke |             33 |
+|             20 |      West Brom |             31 |
+2022-05-23 09:38:12.438  INFO 24308 --- [           main] atchRepositoryDataHubSportFileSystemImpl : Base path csv(s): /home/pedro/workspace/pulse-live-java-activity
+=======================
+ PREMIER LEAGUE 1819   
+=======================
+|            Pos |           Team |         Points |
+| -------------- | -------------- | -------------- |
+|              1 |       Man City |             98 |
+|              2 |      Liverpool |             97 |
+|              3 |        Chelsea |             72 |
+|              4 |      Tottenham |             71 |
+|              5 |        Arsenal |             70 |
+|              6 |     Man United |             66 |
+|              7 |         Wolves |             57 |
+|              8 |        Everton |             54 |
+|              9 |      Leicester |             52 |
+|             10 |       West Ham |             52 |
+|             11 |        Watford |             50 |
+|             12 | Crystal Palace |             49 |
+|             13 |      Newcastle |             45 |
+|             14 |    Bournemouth |             45 |
+|             15 |        Burnley |             40 |
+|             16 |    Southampton |             39 |
+|             17 |       Brighton |             36 |
+|             18 |        Cardiff |             34 |
+|             19 |         Fulham |             26 |
+|             20 |   Huddersfield |             16 |
+
+Process finished with exit code 0
+
